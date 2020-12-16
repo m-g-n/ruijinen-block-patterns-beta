@@ -39,8 +39,10 @@ class RJE_load_register_block {
     }
 
     public function register_block_style() {
-        foreach ( glob( RJE_PLUGIN_PATH . 'block-styles/*/*/*/register.php' ) as $file ) {
-            require_once( $file );
+        foreach ( $this->load_style_handle as $handle => $use_patterns ) {
+            foreach ( glob( RJE_PLUGIN_PATH . 'block-styles/*/*/' . $handle . '/register.php' ) as $file ) {
+                require_once( $file );
+            }
         }
     }
 
