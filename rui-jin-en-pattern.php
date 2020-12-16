@@ -25,5 +25,7 @@ require_once RJE_PLUGIN_PATH . 'inc/is-snow-monkey-theme.php';
 require_once RJE_PLUGIN_PATH . 'inc/is-snow-monkey-blocks-plugin.php';
 // 自動アップデート
 require_once RJE_PLUGIN_PATH . 'inc/auto-update.php';
+// ブロックスタイルの設定
+require_once RJE_PLUGIN_PATH . 'inc/register-block-style.php';
 // ブロックパターンの設定
 require_once RJE_PLUGIN_PATH . 'inc/register-block-pattern.php';
