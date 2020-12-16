@@ -9,16 +9,21 @@
  * @license GPL-2.0+
  */
 
- /**
+/**
  * 定数を宣言
  */
 define( 'RJE_PLUGIN_URL', plugins_url( '', __FILE__ ) ); // このプラグインのURL
 define( 'RJE_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ); // このプラグインのパス
 
 /**
- * Snow Monkey 以外のテーマを利用している場合は有効化してもカスタマイズが反映されないようにする
+ * inc ファイルの読み込み
  */
-$theme = wp_get_theme( get_template() );
-if ( 'snow-monkey' !== $theme->template && 'snow-monkey/resources' !== $theme->template ) {
-	return;
-}
+
+// Snow Monkey テーマが有効かの判別と、有効でない場合の処理
+require_once RJE_PLUGIN_PATH . 'inc/is-snow-monkey-theme.php';
+// Snow Monkey Blocks プラグインが有効かの判別と、有効でない場合の処理
+require_once RJE_PLUGIN_PATH . 'inc/is-snow-monkey-blocks-plugin.php';
+// 自動アップデート
+require_once RJE_PLUGIN_PATH . 'inc/auto-update.php';
+// ブロックパターンの設定
+require_once RJE_PLUGIN_PATH . 'inc/register-block-pattern.php';
