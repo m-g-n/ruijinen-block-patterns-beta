@@ -10,9 +10,25 @@
 <p>ステップブロックの中には、テキスト（段落）の他、画像やその他のブロックを入れることができます。<br>例えばカラムブロックの中に画像を並べるみたいなリッチなブロックも入ります。</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:gallery {"linkTo":"none"} -->
-<figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-1.jpg" alt="流れ イメージ1" data-full-url="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-1.jpg"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-2.jpg" alt="流れ イメージ2" data-full-url="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-2.jpg"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-3.jpg" alt="流れ イメージ3" data-full-url="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-3.jpg"/></figure></li></ul></figure>
-<!-- /wp:gallery --></div></div></div>
+<!-- wp:snow-monkey-blocks/items {"md":3,"lg":3} -->
+<div class="wp-block-snow-monkey-blocks-items smb-items"><div class="c-row c-row--margin" data-columns="1" data-md-columns="3" data-lg-columns="3"><!-- wp:snow-monkey-blocks/items--item--free -->
+<div class="wp-block-snow-monkey-blocks-items--item--free c-row__col"><div class="smb-items__item smb-items__item--free"><div class="smb-items__item__body"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-1.jpg" alt="パターン:流れ サンプル画像 1"/></figure>
+<!-- /wp:image --></div></div></div>
+<!-- /wp:snow-monkey-blocks/items--item--free -->
+
+<!-- wp:snow-monkey-blocks/items--item--free -->
+<div class="wp-block-snow-monkey-blocks-items--item--free c-row__col"><div class="smb-items__item smb-items__item--free"><div class="smb-items__item__body"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-2.jpg" alt="パターン:流れ サンプル画像 2"/></figure>
+<!-- /wp:image --></div></div></div>
+<!-- /wp:snow-monkey-blocks/items--item--free -->
+
+<!-- wp:snow-monkey-blocks/items--item--free -->
+<div class="wp-block-snow-monkey-blocks-items--item--free c-row__col"><div class="smb-items__item smb-items__item--free"><div class="smb-items__item__body"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ); ?>images/step-sample-3.jpg" alt="パターン:流れ サンプル画像 3"/></figure>
+<!-- /wp:image --></div></div></div>
+<!-- /wp:snow-monkey-blocks/items--item--free --></div></div>
+<!-- /wp:snow-monkey-blocks/items --></div></div></div>
 <!-- /wp:snow-monkey-blocks/step--item--free -->
 
 <!-- wp:snow-monkey-blocks/step--item--free -->
