@@ -19,6 +19,18 @@
             &::before {
                 padding-top: 400px;
             }
+            .c-entry-summary__term {
+                right: inherit;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                max-width: 208px;
+                min-width: 114px;
+                padding: 0.5rem;
+                font-size: 0.75rem;
+                line-height: 1.4;
+                word-break: break-word;
+            }
         }
         .c-entry-summary__body {
             position: relative;
@@ -48,21 +60,29 @@
             text-align: right;
         }
         .c-meta__item {
-            &:first-child {
-                margin-left: 0;
-            }
+            max-width: 45%;
+            vertical-align: middle;
             &:not(:last-child) {
                 margin-right: 0;
                 margin-left: 0.625rem;
             }
             &.c-meta__item--author {
+                position: relative;
+                margin-left: 0;
+                padding-left: 28px;
+                text-align: left;
+                white-space: normal;
                 img {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -12px;
                     margin-right: 4px;
                 }
             }
             &.c-meta__item--published {
-                margin-left: 0.45rem;
-                padding-left: 0.625rem;
+                margin-left: 4%;
+                padding-left: 5%;
                 border-left: 1px solid #CFCFCF;
             }
         }
