@@ -13,6 +13,16 @@
             @include mq(sm) {
                 margin-bottom: 7%;
             }
+            @include mq(lg) {
+                > a:active,
+                > a:focus,
+                > a:hover {
+                    .c-entry-summary__body {
+                        opacity: 1;
+                        filter: brightness(95%);
+                    }
+                }
+            }
         }
         .c-entry-summary__figure {
             margin-bottom: 0;
@@ -39,6 +49,7 @@
             margin-left: 10%;
             padding: 1.5rem 6%;
             background-color: #ffffff;
+            transition: filter .2s ease-out;
         }
         .c-entry-summary__header {
             margin-bottom: 0.5rem;
