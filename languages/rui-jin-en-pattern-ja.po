@@ -31,6 +31,12 @@ msgstr ""
 "[RUI-JIN-EN Pattern Library] このプラグインはプレミアムテーマ Snow Monkey が必要で"
 "す."
 
+#: inc/is-snow-monkey-blocks-plugin.php:20
+msgid "[RUI-JIN-EN Pattern Library] This Plugin needs a plugin Snow Monkey Blocks."
+msgstr ""
+"[RUI-JIN-EN Pattern Library] このプラグインは Snow Monkey Blocks プラグインが必要で"
+"す."
+
 #. Plugin Name of the plugin/theme
 msgid "RUI-JIN-EN Pattern Library"
 msgstr "類人猿パターンライブラリ"
