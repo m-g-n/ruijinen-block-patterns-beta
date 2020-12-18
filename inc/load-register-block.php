@@ -29,7 +29,7 @@ class RJE_load_register_block {
     }
 
     public function register_block_pattern_category() {
-        register_block_pattern_category( 'RJE-company', array( 'label' => 'コーポレートサイト' ) );
+        register_block_pattern_category( 'RJE-company', array( 'label' => '企業向けサイトのための類人猿' ) );
     }
 
     public function register_block_pattern() {

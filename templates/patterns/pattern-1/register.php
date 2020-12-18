@@ -6,20 +6,27 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title = 'サンプル';
-$use_block_style = array(
-    'RJE-sample',
+$pattern_title    = 'サンプル 1';
+$use_block_style  = array(
+    'RJE-sample-1',
 );
 
 
 foreach ( $use_block_style as $block_style_name ) {
-    $this->load_style_handle[$block_style_name][] = $pattern_title;
+	$this->load_style_handle[ $block_style_name ][] = $pattern_title;
 }
+
+$contents = '';
+ob_start();
+require RJE_PLUGIN_PATH . 'patterns/' . basename( __DIR__ ) . '/pattern.php';
+$contents = ob_get_contents();
+ob_end_clean();
+
 register_block_pattern(
-    'RJE-pattern/' . basename(__DIR__),
-    array(
-        'title' => $pattern_title,
-        'content' => file_get_contents( RJE_PLUGIN_PATH . 'patterns/' . basename(__DIR__) . '/pattern.php' ),
-        'categories' => $pattern_category
-    )
+	'RJE-pattern/' . basename( __DIR__ ),
+	array(
+		'title'      => $pattern_title,
+		'content'    => $contents,
+		'categories' => $pattern_category,
+	)
 );
