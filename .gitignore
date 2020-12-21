@@ -136,3 +136,5 @@ node_modules
 ai1wm-backups
 .DS_Store
 robots.txt
+
+/vendor/

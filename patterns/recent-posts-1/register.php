@@ -6,9 +6,9 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = 'サンプル 1';
+$pattern_title    = '最新の投稿 1';
 $use_block_style  = array(
-    'RJE-sample-1',
+    'RJE-recent-posts-1',
 );
 
 
