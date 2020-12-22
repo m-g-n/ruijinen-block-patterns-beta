@@ -9,7 +9,8 @@ $pattern_category = array( 'RJE-company' );
 $pattern_title    = '項目（バナー・全幅） 1';
 $use_block_style  = array(
 	'RJE-items-alignfull-1',
-    'RJE-items--banner-1',
+	'RJE-items--banner-1',
+	'RJE-items-glue-1',
 );
 
 
