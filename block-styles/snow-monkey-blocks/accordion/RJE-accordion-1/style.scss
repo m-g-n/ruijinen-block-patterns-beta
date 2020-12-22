@@ -1,0 +1,65 @@
+@charset 'utf-8';
+
+@import '../../../../src/css/block-styles';
+
+.is-style-RJE-accordion-1{
+	.smb-accordion__item{
+		margin-bottom: 24px;
+		border: solid 1px #CFCFCF;
+		padding: 24px 4%;
+		&__title{
+			font-size : 16px;
+			font-weight: 700;
+			padding: 0;
+			background-color: transparent;
+			position: relative;
+			flex-direction: row-reverse;
+			&__icon{
+				width: 15px;
+				height: 15px;
+				margin-right: 20px;
+				position: relative;
+				*{
+					display: none;
+				}
+				&::before{
+					content: "";
+					width: 15px;
+					height: 1px;
+					background-color: var(--accent-color, #000);
+					display: block;
+					position: absolute;
+					top: 7px;
+					left: 0;
+				}
+				&::after{
+					content: "";
+					width: 1px;
+					height: 15px;
+					background-color: var(--accent-color, #000);
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 7px;
+				}
+			}
+		}
+		&__body{
+			margin-top: 24px;
+			border-top: solid 1px #CFCFCF;
+			padding: 24px 0 0;
+		}
+		&__control:checked+.smb-accordion__item__title>.smb-accordion__item__title__icon {
+			transform: rotate(45deg);
+			transform-origin: center;
+		}
+	}
+	@include mq(sm) {
+		.smb-accordion__item{
+			padding: 24px 40px;
+			&__body{
+				padding: 16px 0 0;
+			}
+		}
+	}
+}
