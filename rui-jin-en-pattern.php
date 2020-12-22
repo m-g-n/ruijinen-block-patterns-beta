@@ -12,25 +12,23 @@
 /**
  * 定数を宣言
  */
-define( 'RJE_PLUGIN_URL', plugins_url( '', __FILE__ ) ); // このプラグインのURL
+define( 'RJE_PLUGIN_URL', plugins_url( '', __FILE__ ) );  // このプラグインのURL
 define( 'RJE_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ); // このプラグインのパス
+define( 'RJE_BASENAME', plugin_basename( __FILE__ ) );    // このプラグインのベースネーム
 
 /**
  * テキストドメインを宣言
  */
 function rje_pattern_load_textdomain() {
-	load_plugin_textdomain( 'rui-jin-en-pattern', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( 'rui-jin-en-pattern', false, dirname( RJE_BASENAME ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'rje_pattern_load_textdomain' );
 
 /**
  * inc ファイルの読み込み
  */
-
-// Snow Monkey テーマが有効かの判別と、有効でない場合の処理
-require_once RJE_PLUGIN_PATH . 'inc/is-snow-monkey-theme.php';
-// Snow Monkey Blocks プラグインが有効かの判別と、有効でない場合の処理
-require_once RJE_PLUGIN_PATH . 'inc/is-snow-monkey-blocks-plugin.php';
+// Snow Monkey および Snow Monkey Blocks が有効化されていない場合の処理
+require_once RJE_PLUGIN_PATH . 'inc/activate.php';
 // 自動アップデート
 require_once RJE_PLUGIN_PATH . 'inc/auto-update.php';
 // ブロックスタイル及びブロックパターンの設定の読み込み
