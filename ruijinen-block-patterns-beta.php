@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin name: 類人猿パターンライブラリ（β版）
+ * Plugin name: 類人猿ブロックパターン（ベータ）
  * Description: Snow Monkeyサイトをより素敵にするブロックパターンが入っています
  * Version: 0.1.0beta
  *
