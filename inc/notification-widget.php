@@ -43,20 +43,6 @@ function rje_notification_content() {
 		return;
 	}
 	?>
-	<style>
-		.rje-widget-btn-area {
-			text-align: center;
-			margin-top: 15px !important;
-		}
-		.rje-widget-btn-area li {
-			display: inline-block;
-			margin: 0 5px;
-		}
-		.rje-widget-btn-area .rje-widget-btn {
-			min-width: 80px;
-			text-align: center;
-		}
-	</style>
 	<div class="wordpress-news hide-if-no-js">
 		<div class="rss-widget">
 			<h3><?php esc_html_e( __( 'Information', 'rui-jin-en-pattern' ) ); ?></h3>
@@ -67,12 +53,23 @@ function rje_notification_content() {
 			</ul>
 			<ul class="rje-widget-btn-area">
 				<li><a href="" class="rje-widget-btn button-primary"><?php esc_html_e( __( 'Official Site', 'rui-jin-en-pattern' ) ); ?></a></li>
-<?php /* // 後日公開 */ ?>
+<?php /*
 				<li><a href="" class="rje-widget-btn button-primary"><?php esc_html_e( __( 'How to use', 'rui-jin-en-pattern' ) ); ?></a></li>
 				<li><a href="" class="rje-widget-btn button-primary"><?php esc_html_e( __( 'FAQ', 'rui-jin-en-pattern' ) ); ?></a></li>
-<?php /**/ ?>
+*/ ?>
 			</ul>
 		</div>
 	</div>
 	<?php
 }
+
+// ウィジェット向けのスタイルを追加
+function enuqeue_notification_widget_style() {
+	wp_enqueue_style(
+		'notification-widget',
+		RJE_PLUGIN_URL . '/src/css/notification-widget.css',
+		array(),
+		filemtime( RJE_PLUGIN_PATH . '/src/css/notification-widget.css' )
+	);
+}
+add_action( 'admin_enqueue_scripts', 'enuqeue_notification_widget_style' );
