@@ -25,16 +25,10 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: vendor\n"
 "X-Poedit-SearchPathExcluded-4: tests\n"
 
-#: inc/is-snow-monkey-theme.php:16
-msgid "[RUI-JIN-EN Pattern Library] This Plugin needs the premium theme Snow Monkey."
+#: inc/activate.php:28
+msgid "[RUI-JIN-EN Pattern Library] This Plugin must need the premium theme Snow Monkey and a plugin Snow Monkey Blocks."
 msgstr ""
-"[RUI-JIN-EN Pattern Library] このプラグインはプレミアムテーマ Snow Monkey が必要で"
-"す."
-
-#: inc/is-snow-monkey-blocks-plugin.php:20
-msgid "[RUI-JIN-EN Pattern Library] This Plugin needs a plugin Snow Monkey Blocks."
-msgstr ""
-"[RUI-JIN-EN Pattern Library] このプラグインは Snow Monkey Blocks プラグインが必要で"
+"[RUI-JIN-EN Pattern Library] このプラグインはプレミアムテーマ Snow Monkey と Snow Monkey Blocks が必須で"
 "す."
 
 #. Plugin Name of the plugin/theme
