@@ -49,7 +49,9 @@
 			}
 		}
 	}
-	@include mq(md) {
+}
+@include mq(md) {
+	.is-style-RJE-child-pages-1 {
 		.p-child-pages {
 			display: flex;
 			align-items: stretch;
@@ -78,7 +80,9 @@
 			}
 		}
 	}
-	@include mq(lg) {
+}
+@include mq(lg) {
+	.is-style-RJE-child-pages-1 {
 		.p-child-pages {
 			.c-entries {
 				padding: 0 0 0 24px;
@@ -90,6 +94,29 @@
 			&__title {
 				font-size: 24px;
 				width: 200px;
+			}
+		}
+	}
+	.l-body--left-sidebar,
+	.l-body--right-sidebar,
+	.l-body--one-column-slim{
+		.is-style-RJE-child-pages-1 {
+			.p-child-pages {
+				.c-entries {
+					padding: 0;
+					&__item{
+						flex: 0 1 50%;
+						max-width: 50%;
+					}
+				}
+			}
+		}
+	}
+	.l-body--one-column-full,
+	.alignfull{
+		.is-style-RJE-child-pages-1 {
+			.p-child-pages {
+				justify-content: center;
 			}
 		}
 	}
