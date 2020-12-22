@@ -29,9 +29,13 @@ msgid "[RUI-JIN-EN Pattern Library] This Plugin must need the premium theme Snow
 msgstr ""
 "【類人猿パターンライブラリ（β版）】このプラグインはプレミアムテーマ Snow Monkey と Snow Monkey Blocks が必須です."
 
+#. inc/notification-widget.php:28
+msgid "[RUI-JIN-EN Pattern Library] notification"
+msgstr "【類人猿パターンライブラリ（β版）】お知らせ"
+
 #. Plugin Name of the plugin/theme
-msgid "RUI-JIN-EN Pattern Library"
-msgstr "類人猿パターンライブラリ"
+msgid "RUI-JIN-EN Pattern Library - beta"
+msgstr "類人猿パターンライブラリ（β版）"
 
 #. Description of the plugin/theme
 msgid "This plugin contains a block pattern that makes your Snow Monkey site look nicer."
