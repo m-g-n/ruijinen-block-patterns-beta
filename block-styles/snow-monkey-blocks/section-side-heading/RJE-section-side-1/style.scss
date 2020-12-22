@@ -53,3 +53,29 @@
 		}
 	}
 }
+@include mq(lg) {
+	.l-body--left-sidebar,
+	.l-body--right-sidebar,
+	.l-body--one-column-slim{
+		.c-container{
+			padding: 0 40px;
+			.smb-section__title{
+				font-size: 28px;
+			}
+		}
+	}
+	.l-body--one-column{
+		.c-container{
+			.smb-section__title{
+				font-size: 32px;
+			}
+		}
+	}
+	.alignfull{
+		.c-container{
+			.smb-section__title{
+				font-size: 40px;
+			}
+		}
+	}
+}
