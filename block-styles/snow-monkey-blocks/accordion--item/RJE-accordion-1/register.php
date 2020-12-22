@@ -5,7 +5,7 @@
  * @license GPL-2.0+
  */
 
-$override_block_name = 'snow-monkey-blocks/accordion';
+$override_block_name = 'snow-monkey-blocks/accordion--item';
 $block_style_label   = '類人猿 アコーディオン 1';
 
 
