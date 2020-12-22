@@ -1,6 +1,6 @@
 <?php
 /**
- * @package rui-jin-en-pattern
+ * @package ruijinen-block-patterns-beta
  * @author mgn
  * @license GPL-2.0+
  */
