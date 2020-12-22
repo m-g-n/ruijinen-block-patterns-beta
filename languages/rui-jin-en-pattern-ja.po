@@ -28,7 +28,7 @@ msgstr ""
 #: inc/activate.php:28
 msgid "[RUI-JIN-EN Pattern Library] This Plugin must need the premium theme Snow Monkey and a plugin Snow Monkey Blocks."
 msgstr ""
-"[RUI-JIN-EN Pattern Library] このプラグインはプレミアムテーマ Snow Monkey と Snow Monkey Blocks が必須で"
+"[類人猿パターンライブラリ（β版）] このプラグインはプレミアムテーマ Snow Monkey と Snow Monkey Blocks が必須で"
 "す."
 
 #. Plugin Name of the plugin/theme
