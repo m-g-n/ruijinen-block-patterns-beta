@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin name: 類人猿パターンライブラリ（β版）
+ * Plugin name: 類人猿ブロックパターン（ベータ）
  * Description: Snow Monkeyサイトをより素敵にするブロックパターンが入っています
  * Version: 0.1.0beta
  *
- * @package rui-jin-en-pattern
+ * @package ruijinen-block-patterns-beta
  * @author mgn
  * @license GPL-2.0+
  */
@@ -20,7 +20,7 @@ define( 'RJE_BASENAME', plugin_basename( __FILE__ ) );    // このプラグイ�
  * テキストドメインを宣言
  */
 function rje_pattern_load_textdomain() {
-	load_plugin_textdomain( 'rui-jin-en-pattern', false, dirname( RJE_BASENAME ) . '/languages/' );
+	load_plugin_textdomain( 'ruijinen-block-patterns-beta', false, dirname( RJE_BASENAME ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'rje_pattern_load_textdomain' );
 

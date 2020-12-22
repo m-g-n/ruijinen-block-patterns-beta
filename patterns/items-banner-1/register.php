@@ -1,6 +1,6 @@
 <?php
 /**
- * @package rui-jin-en-pattern
+ * @package ruijinen-block-patterns-beta
  * @author mgn
  * @license GPL-2.0+
  */
@@ -8,7 +8,8 @@
 $pattern_category = array( 'RJE-company' );
 $pattern_title    = '項目（バナー） 1';
 $use_block_style  = array(
-    'RJE-items--banner-1',
+	'RJE-items--banner-1',
+	'RJE-items-glue-1',
 );
 
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package rui-jin-en-pattern
+ * @package ruijinen-block-patterns-beta
  * @author mgn
  * @license GPL-2.0+
  */
@@ -25,7 +25,7 @@ function rje_pattern_activate() {
 function rje_pattern_notice() {
 	?>
 <div class="error">
-	<p><?php esc_html_e( '[RUI-JIN-EN Pattern Library] This Plugin must need the premium theme Snow Monkey and a plugin Snow Monkey Blocks.', 'rui-jin-en-pattern' ); ?></p>
+	<p><?php esc_html_e( '[RUI-JIN-EN Pattern Library] This Plugin must need the premium theme Snow Monkey and a plugin Snow Monkey Blocks.', 'ruijinen-block-patterns-beta' ); ?></p>
 </div>
 	<?php
 }
