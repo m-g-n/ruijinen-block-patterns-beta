@@ -23,8 +23,7 @@ function rje_notification_content() {
 	if ( WP_DEBUG || ! $transient ) {
 	// if ( ! $transient ) { // todo: 公開時に戻す
 		$wp_api_posts = wp_remote_get(
-			'https://rui-jin-en.com/wp-json/wp/v2/pages/?per_page=3' // todo: サンプル
-			// 'https://rui-jin-en.com/wp-json/custom/v1/info'
+			'https://rui-jin-en.com/wp-json/custom/v1/info'
 		);
 
 		if ( is_wp_error( $wp_api_posts ) || 200 !== $wp_api_posts['response']['code'] ) {
