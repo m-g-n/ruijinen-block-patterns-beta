@@ -1,6 +1,6 @@
 <?php
 /**
- * @package rui-jin-en-pattern
+ * @package ruijinen-block-patterns-beta
  * @author mgn
  * @license GPL-2.0+
  */
@@ -11,7 +11,7 @@
 add_action( 'wp_dashboard_setup', 'rje_notification_widget' );
 // ダッシュボードにウィジェットを追加する
 function rje_notification_widget() {
-	wp_add_dashboard_widget( 'rje-notification-widget', __( 'RUI-JIN-EN Pattern Library - beta', 'rui-jin-en-pattern' ), 'rje_notification_content' );
+	wp_add_dashboard_widget( 'rje-notification-widget', __( 'RUI-JIN-EN Pattern Library - beta', 'ruijinen-block-patterns-beta' ), 'rje_notification_content' );
 }
 
 // ウィジェットへ出力する内容
@@ -43,17 +43,17 @@ function rje_notification_content() {
 	?>
 	<div class="wordpress-news hide-if-no-js">
 		<div class="rss-widget">
-			<h3><?php esc_html_e( __( 'Information', 'rui-jin-en-pattern' ) ); ?></h3>
+			<h3><?php esc_html_e( __( 'Information', 'ruijinen-block-patterns-beta' ) ); ?></h3>
 			<ul id="rje-notification-widget">
 				<?php foreach ( $wp_api_posts as $item ) : ?>
 					<li><a href="<?php echo esc_url( $item->link ); ?>" target="_blank" rel="noreferrer"><?php echo esc_html( $item->title->rendered ); ?></a></li>
 				<?php endforeach; ?>
 			</ul>
 			<ul class="rje-widget-btn-area">
-				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'Official Site', 'rui-jin-en-pattern' ) ); ?></a></li>
+				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'Official Site', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
 <?php /*
-				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'How to use', 'rui-jin-en-pattern' ) ); ?></a></li>
-				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'FAQ', 'rui-jin-en-pattern' ) ); ?></a></li>
+				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'How to use', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
+				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'FAQ', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
 */ ?>
 			</ul>
 		</div>
