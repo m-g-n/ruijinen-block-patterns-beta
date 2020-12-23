@@ -52,10 +52,10 @@ function rje_notification_content() {
 				<?php endforeach; ?>
 			</ul>
 			<ul class="rje-widget-btn-area">
-				<li><a href="" class="rje-widget-btn button-primary"><?php esc_html_e( __( 'Official Site', 'rui-jin-en-pattern' ) ); ?></a></li>
+				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'Official Site', 'rui-jin-en-pattern' ) ); ?></a></li>
 <?php /*
-				<li><a href="" class="rje-widget-btn button-primary"><?php esc_html_e( __( 'How to use', 'rui-jin-en-pattern' ) ); ?></a></li>
-				<li><a href="" class="rje-widget-btn button-primary"><?php esc_html_e( __( 'FAQ', 'rui-jin-en-pattern' ) ); ?></a></li>
+				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'How to use', 'rui-jin-en-pattern' ) ); ?></a></li>
+				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'FAQ', 'rui-jin-en-pattern' ) ); ?></a></li>
 */ ?>
 			</ul>
 		</div>
