@@ -20,12 +20,10 @@ function rje_notification_content() {
 
 	$transient = get_transient( 'rje-notification-widget' );
 
-	if ( ! $transient ) {
+	if ( WP_DEBUG || ! $transient ) {
+	// if ( ! $transient ) {
 		$wp_api_posts = wp_remote_get(
-			'https://snow-monkey.2inc.org/wp-json/wp/v2/topic?per_page=5',
-			[
-				'user-agent' => 'WordPress/' . $wp_version,
-			]
+			'https://lunalunadesign.net/wp-json/wp/v2/posts/?per_page=3'
 		);
 
 		if ( is_wp_error( $wp_api_posts ) || 200 !== $wp_api_posts['response']['code'] ) {
