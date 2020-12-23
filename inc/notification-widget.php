@@ -21,9 +21,10 @@ function rje_notification_content() {
 	$transient = get_transient( 'rje-notification-widget' );
 
 	if ( WP_DEBUG || ! $transient ) {
-	// if ( ! $transient ) {
+	// if ( ! $transient ) { // todo: 公開時に戻す
 		$wp_api_posts = wp_remote_get(
-			'https://lunalunadesign.net/wp-json/wp/v2/posts/?per_page=3'
+			'https://rui-jin-en.com/wp-json/wp/v2/pages/?per_page=3' // todo: サンプル
+			// 'https://rui-jin-en.com/wp-json/custom/v1/info'
 		);
 
 		if ( is_wp_error( $wp_api_posts ) || 200 !== $wp_api_posts['response']['code'] ) {
@@ -40,18 +41,31 @@ function rje_notification_content() {
 	if ( ! $wp_api_posts ) {
 		return;
 	}
+
+	$i = 0;
+	foreach ( $wp_api_posts as $item ) {
+		if ( 0 === $i ) {
+			$meta_data = $item->info;
+		} else {
+			$posts_data[] = $item;
+		}
+		$i++;
+	}
 	?>
 	<div class="wordpress-news hide-if-no-js">
 		<div class="rss-widget">
 			<h3><?php esc_html_e( __( 'Information', 'ruijinen-block-patterns-beta' ) ); ?></h3>
+	<?php if ( ! empty( $meta_data ) ) : ?>
+			<div class="rje-nortification-text"><?php echo nl2br( esc_textarea( $meta_data ) ); ?></div>
+	<?php endif; ?>
 			<ul id="rje-notification-widget">
-				<?php foreach ( $wp_api_posts as $item ) : ?>
+				<?php foreach ( $posts_data as $item ) : ?>
 					<li><a href="<?php echo esc_url( $item->link ); ?>" target="_blank" rel="noreferrer"><?php echo esc_html( $item->title->rendered ); ?></a></li>
 				<?php endforeach; ?>
 			</ul>
 			<ul class="rje-widget-btn-area">
 				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'Official Site', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
-<?php /*
+<?php /* // todo: 準備できたら随時コメントアウトを外す
 				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'How to use', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
 				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'FAQ', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
 */ ?>

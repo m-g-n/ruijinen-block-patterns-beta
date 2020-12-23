@@ -12,3 +12,11 @@
 	min-width: 80px;
 	text-align: center;
 }
+
+.rje-nortification-text {
+	padding: 15px;
+	background-color: #f7f7f7;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
