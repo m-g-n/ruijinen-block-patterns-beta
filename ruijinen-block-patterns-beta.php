@@ -33,3 +33,5 @@ require_once RJE_PLUGIN_PATH . 'inc/activate.php';
 require_once RJE_PLUGIN_PATH . 'inc/auto-update.php';
 // ブロックスタイル及びブロックパターンの設定の読み込み
 require_once RJE_PLUGIN_PATH . 'inc/load-register-block.php';
+// 管理画面に通知を表示
+require_once RJE_PLUGIN_PATH . 'inc/notification-widget.php';
