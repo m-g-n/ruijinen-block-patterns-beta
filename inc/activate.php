@@ -25,7 +25,7 @@ function rje_pattern_activate() {
 function rje_pattern_notice() {
 	?>
 <div class="error">
-	<p><?php esc_html_e( '[RUI-JIN-EN Pattern Library] This Plugin must need the premium theme Snow Monkey and a plugin Snow Monkey Blocks.', 'ruijinen-block-patterns-beta' ); ?></p>
+	<p><?php esc_html_e( '[RUI-JIN-EN Block Patterns] This Plugin must need the premium theme Snow Monkey and a plugin Snow Monkey Blocks.', 'ruijinen-block-patterns-beta' ); ?></p>
 </div>
 	<?php
 }
