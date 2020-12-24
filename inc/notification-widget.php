@@ -11,7 +11,7 @@
 add_action( 'wp_dashboard_setup', 'rje_notification_widget' );
 // ダッシュボードにウィジェットを追加する
 function rje_notification_widget() {
-	wp_add_dashboard_widget( 'rje-notification-widget', __( 'RUI-JIN-EN Pattern Library - beta', 'ruijinen-block-patterns-beta' ), 'rje_notification_content' );
+	wp_add_dashboard_widget( 'rje-notification-widget', __( 'RUI-JIN-EN Block Patterns Beta', 'ruijinen-block-patterns-beta' ), 'rje_notification_content' );
 }
 
 // ウィジェットへ出力する内容
