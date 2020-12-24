@@ -3,6 +3,9 @@
 @import '../../../../src/css/block-styles';
 
 .is-style-RJE-layered-center:not(:root){
+	&.has-background{
+		padding: 0;
+	}
 	.wp-block-cover{
 		&__inner-container{
 			margin-bottom: 100px;
