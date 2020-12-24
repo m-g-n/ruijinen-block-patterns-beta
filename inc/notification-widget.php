@@ -41,6 +41,8 @@ function rje_notification_content() {
 		return;
 	}
 
+	$posts_data = [];
+
 	$i = 0;
 	foreach ( $wp_api_posts as $item ) {
 		if ( 0 === $i ) {
