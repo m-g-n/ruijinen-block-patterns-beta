@@ -35,3 +35,5 @@ require_once RJE_PLUGIN_PATH . 'inc/auto-update.php';
 require_once RJE_PLUGIN_PATH . 'inc/load-register-block.php';
 // 管理画面に通知を表示.
 require_once RJE_PLUGIN_PATH . 'inc/notification-widget.php';
+
+require_once RJE_PLUGIN_PATH . 'vendor/autoload.php';
