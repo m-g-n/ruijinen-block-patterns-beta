@@ -27,23 +27,8 @@
         font-size: 1rem;
         line-height: 1.8;
     }
-    .c-row[data-columns="1"]:not(.c-row--margin)>& {
+    .c-row[data-columns]:not(.c-row--margin)>& {
         margin-bottom: 1px;
-    }
-    @include mq(sm) {
-        .c-row[data-md-columns="1"]:not(.c-row--margin)>& {
-            margin-bottom: 1px;
-        }
-        .c-row:not([data-md-columns="1"]):not(.c-row--margin)>& {
-            margin-bottom: 0px;
-        }
-    }
-    @include mq(lg) {
-        .c-row[data-lg-columns="1"]:not(.c-row--margin)>& {
-            margin-bottom: 1px;
-        }
-        .c-row:not([data-lg-columns="1"]):not(.c-row--margin)>& {
-            margin-bottom: 0px;
-        }
+        padding-bottom: 0;
     }
 }
