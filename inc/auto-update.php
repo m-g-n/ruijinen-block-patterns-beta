@@ -31,8 +31,8 @@ class RJEAutoUpdate {
 	public function _activate_autoupdate() {
 		new Updater(
 			RJE_BASENAME,
-			'megane9988',
-			'megane-update-ver2'
+			'm-g-n',
+			'ruijinen-block-patterns-beta'
 		);
 	}
 }
