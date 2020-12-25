@@ -13,6 +13,16 @@
             @include mq(sm) {
                 margin-bottom: 7%;
             }
+            @include mq(lg) {
+                > a:active,
+                > a:focus,
+                > a:hover {
+                    .c-entry-summary__body {
+                        opacity: 1;
+                        filter: brightness(95%);
+                    }
+                }
+            }
         }
         .c-entry-summary__figure {
             margin-bottom: 0;
