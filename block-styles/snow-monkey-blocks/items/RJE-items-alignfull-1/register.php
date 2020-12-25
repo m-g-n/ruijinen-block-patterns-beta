@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/items';
-$block_style_label   = '類人猿の項目の余白（全幅）';
+$block_style_label   = '類人猿 項目の余白1（全幅）';
 
 
 register_block_style(

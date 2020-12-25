@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/child-pages';
-$block_style_label   = '類人猿 このページの子ページ一覧 1';
+$block_style_label   = '類人猿 このページの子ページ一覧1';
 
 
 register_block_style(

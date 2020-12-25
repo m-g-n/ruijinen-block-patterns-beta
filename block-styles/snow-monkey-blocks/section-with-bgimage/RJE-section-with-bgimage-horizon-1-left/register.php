@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/section-with-bgimage';
-$block_style_label   = '類人猿の画像と水平セクション 左';
+$block_style_label   = '類人猿 画像と水平セクション1（左）';
 
 
 register_block_style(

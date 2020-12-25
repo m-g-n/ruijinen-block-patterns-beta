@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/step';
-$block_style_label   = '類人猿 ステップ 1';
+$block_style_label   = '類人猿 ステップ1';
 
 
 register_block_style(

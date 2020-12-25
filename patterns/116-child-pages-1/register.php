@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = 'このページの子ページ一覧 1';
+$pattern_title    = 'このページの子ページ一覧1';
 $use_block_style  = array(
 	'RJE-child-pages-1',
 );

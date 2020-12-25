@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '人物キャッチ 1';
+$pattern_title    = '人物キャッチ1';
 $use_block_style  = array(
 	'RJE-person-catch-1',
 );

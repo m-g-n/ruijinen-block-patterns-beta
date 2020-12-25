@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '流れ 1';
+$pattern_title    = '流れ1';
 $use_block_style  = array(
 	'RJE-step-1',
 );

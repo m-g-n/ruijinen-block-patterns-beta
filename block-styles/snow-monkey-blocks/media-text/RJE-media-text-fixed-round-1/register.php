@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/media-text';
-$block_style_label   = '類人猿の画像幅固定＆丸抜き';
+$block_style_label   = '類人猿 画像幅固定＆丸抜き1';
 
 
 register_block_style(

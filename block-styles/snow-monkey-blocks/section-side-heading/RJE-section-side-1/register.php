@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/section-side-heading';
-$block_style_label   = '類人猿 セクション サイド 1';
+$block_style_label   = '類人猿 セクション1（サイド）';
 
 
 register_block_style(

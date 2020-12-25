@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '任意ページへ誘導 1 テキスト左';
+$pattern_title    = '任意ページへ誘導1（テキスト左）';
 $use_block_style  = array(
     'RJE-section-with-bgimage-horizon-1-left',
 );

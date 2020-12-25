@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/taxonomy-posts';
-$block_style_label   = '類人猿の任意のタクソノミーの投稿 1 （リッチメディアのみ対応）';
+$block_style_label   = '類人猿 任意のタクソノミーの投稿1（リッチメディアのみ対応）';
 
 
 register_block_style(

@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '項目（バナー） 1';
+$pattern_title    = '背景画像あり項目1';
 $use_block_style  = array(
 	'RJE-items-margin-7-1',
 	'RJE-items--banner-1',

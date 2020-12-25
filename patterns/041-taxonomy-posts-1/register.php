@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '任意のタクソノミーの投稿 1';
+$pattern_title    = '任意のタクソノミーの投稿1';
 $use_block_style  = array(
     'RJE-taxonomy-posts-1',
 );

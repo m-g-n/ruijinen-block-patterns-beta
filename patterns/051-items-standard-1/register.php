@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '項目（スタンダード） 1';
+$pattern_title    = 'シンプルな項目1（スタンダード）';
 $use_block_style  = array(
 	'RJE-items-margin-7-1',
     'RJE-items--item--standard-1',

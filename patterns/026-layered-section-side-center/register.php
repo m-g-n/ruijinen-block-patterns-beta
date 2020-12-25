@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = '重なり サイド 中央';
+$pattern_title    = '重なりキャッチ2（中央）';
 $use_block_style  = array(
 	'RJE-layered-center',
 	'RJE-section-side-1',

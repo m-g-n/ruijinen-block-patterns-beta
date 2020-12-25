@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/items--banner';
-$block_style_label   = '類人猿の項目（バナー）';
+$block_style_label   = '類人猿 背景画像あり項目1';
 
 
 register_block_style(
