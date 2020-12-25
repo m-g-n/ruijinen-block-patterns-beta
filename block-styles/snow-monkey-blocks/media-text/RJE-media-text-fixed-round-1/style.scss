@@ -6,7 +6,7 @@
     + .smb-media-text.is-style-RJE-media-text-fixed-round-1,
     + .smb-media-text.is-style-RJE-media-text-fixed-round-slim-1 {
         margin-top: 5rem;
-        @include mq(smb-mt-lg, max) {
+        @include mq(max-lg, max) {
             margin-top: 2.5rem;
         }
     }
