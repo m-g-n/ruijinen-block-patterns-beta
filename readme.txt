@@ -1,4 +1,4 @@
-=== 類人猿ブロックパターン（ベータ）test ===
+=== 類人猿ブロックパターン（ベータ） ===
 Contributors: mgn
 Donate link: https://rui-jin-en.com/
 Tags: gutenberg, block, blocks, editor, gutenberg blocks, page builder, landing page, microcopy, steps, call to action
@@ -9,10 +9,10 @@ Requires PHP: 7.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-WordPressテーマ Snow Monkeyを拡張するブロックパターン（ベータ）test
+WordPressテーマ Snow Monkeyを拡張するブロックパターン（ベータ）
 
 == Description ==
-類人猿ブロックパターン（ベータ）test はWordPressテーマ Snow Monkey ( https://snow-monkey.2inc.org/ ) を拡張するブロックパターンを提供します。。
+類人猿ブロックパターン（ベータ）はWordPressテーマ Snow Monkey ( https://snow-monkey.2inc.org/ ) を拡張するブロックパターンを提供します。
 
 ## ただいまこちらからダウンロードできるプラグインは『ベータ版』です
 - 一般に公開されているサイトでのご利用は推奨されません
