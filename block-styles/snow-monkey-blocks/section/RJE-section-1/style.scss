@@ -23,15 +23,48 @@
 			text-align: left;
 		}
 	}
-	@include mq(lg) {
+}
+@include mq(lg) {
+	.is-style-RJE-section-1{
 		padding: 48px 0;
 		.c-container{
 			padding: 0 86px;
-			.smb-section__title{
-				font-size: 40px;
-			}
 			.smb-section__lede{
 				margin-top: 40px;
+			}
+		}
+	}
+	/* スリム */
+	.l-body--left-sidebar,
+	.l-body--right-sidebar,
+	.l-body--one-column-slim,
+	.l-body--blank-slim {
+		.is-style-RJE-section-1{
+			.c-container{
+				.smb-section__title{
+					font-size: 28px;
+				}
+				.smb-section__lede{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	/* フル */
+	.l-body--blank-content,
+	.l-body--blank,
+	.l-body--one-column-full,
+	.l-body--one-column,
+	.alignfull,
+	.alignwide{
+		.is-style-RJE-section-1{
+			.c-container{
+				.smb-section__title{
+					font-size: 40px;
+				}
+				.smb-section__lede{
+					font-size: 16px;
+				}
 			}
 		}
 	}
