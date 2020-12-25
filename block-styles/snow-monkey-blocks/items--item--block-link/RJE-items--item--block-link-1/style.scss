@@ -48,9 +48,10 @@
     }
     .smb-items__item__btn {
         position: relative;
+        display: block;
         padding: 0 1.9rem 0 0;
         color: var( --accent-color, #cd162c );
-        line-height: 1;
+        text-align: right;
         overflow: visible;
         background-color: transparent;
         &::before {
