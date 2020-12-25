@@ -54,6 +54,14 @@
 		}
 	}
 }
+.l-body--blank-content,
+.l-body--blank,
+.l-body--one-column-full,
+.alignwide{
+	.is-style-RJE-child-pages-1 {
+		padding: 0 calc(var(--_space, 1.76923rem)*0.5*var(--_margin-scale, 1));
+	}
+}
 @include mq(md) {
 	.is-style-RJE-child-pages-1 {
 		.p-child-pages {
@@ -84,6 +92,14 @@
 					max-width: 50%;
 				}
 			}
+		}
+	}
+	.l-body--blank-content,
+	.l-body--blank,
+	.l-body--one-column-full,
+	.alignwide{
+		.is-style-RJE-child-pages-1 {
+			padding: 0;
 		}
 	}
 }
