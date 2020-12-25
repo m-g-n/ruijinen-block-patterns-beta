@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/items--item--block-link';
-$block_style_label   = '類人猿の項目（ブロックリンク）';
+$block_style_label   = '類人猿 シンプルな項目1（ブロックリンク）';
 
 
 register_block_style(

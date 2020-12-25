@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'core/group';
-$block_style_label   = '類人猿 重なり 中央';
+$block_style_label   = '類人猿 重なりキャッチ（中央）';
 
 
 register_block_style(

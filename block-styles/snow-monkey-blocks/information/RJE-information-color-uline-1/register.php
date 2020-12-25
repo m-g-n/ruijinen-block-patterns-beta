@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/information';
-$block_style_label   = '類人猿の情報（ラベル短め）';
+$block_style_label   = '類人猿 ラベル短め1';
 
 
 register_block_style(

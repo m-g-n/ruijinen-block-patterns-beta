@@ -6,7 +6,7 @@
  */
 
 $override_block_name = 'snow-monkey-blocks/section-break-the-grid';
-$block_style_label   = '類人猿 人物キャッチ 1';
+$block_style_label   = '類人猿 人物キャッチ1';
 
 
 register_block_style(
