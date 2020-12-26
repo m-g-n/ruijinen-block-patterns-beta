@@ -2,12 +2,13 @@
 /**
  * Plugin name: 類人猿ブロックパターン（ベータ）
  * Description: Snow Monkeyサイトをより素敵にするブロックパターンが入っています
- * Version: 0.1.0
+ * Version: 0.1.1
+ * Author: mgn Inc.,
+ * Author URI: https://rui-jin-en.com/
+ * License: GPL-2.0+
  *
  * @package ruijinen-block-patterns-beta
- * @author mgn
- * @license GPL-2.0+
- */
+  */
 
 /**
  * 定数を宣言
