@@ -20,8 +20,8 @@ function rje_notification_content() {
 
 	$transient = get_transient( 'rje-notification-widget' );
 
+	// WP_DEBUG が true か $transient がなかったら
 	if ( WP_DEBUG || ! $transient ) {
-	// if ( ! $transient ) { // todo: 公開時に戻す
 		$wp_api_posts = wp_remote_get(
 			'https://rui-jin-en.com/wp-json/custom/v1/info'
 		);
@@ -57,7 +57,7 @@ function rje_notification_content() {
 		<div class="rss-widget">
 			<h3><?php esc_html_e( __( 'Information', 'ruijinen-block-patterns-beta' ) ); ?></h3>
 	<?php if ( ! empty( $meta_data ) ) : ?>
-			<div class="rje-nortification-text"><?php echo nl2br( esc_textarea( $meta_data ) ); ?></div>
+			<div class="rje-nortification-text"><?php echo wp_kses_post( $meta_data ); ?></div>
 	<?php endif; ?>
 			<ul id="rje-notification-widget">
 				<?php foreach ( $posts_data as $item ) : ?>
@@ -66,10 +66,10 @@ function rje_notification_content() {
 			</ul>
 			<ul class="rje-widget-btn-area">
 				<li><a href="https://rui-jin-en.com/" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'Official Site', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
-<?php /* // todo: 準備できたら随時コメントアウトを外す
+<?php /* // todo: 準備できたらコメントアウトを外す
 				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'How to use', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
-				<li><a href="" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'FAQ', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
 */ ?>
+				<li><a href="https://rui-jin-en.com/faq/" class="rje-widget-btn button-primary" target="_blank" rel="noopener noreferrer"><?php esc_html_e( __( 'FAQ', 'ruijinen-block-patterns-beta' ) ); ?></a></li>
 			</ul>
 		</div>
 	</div>
