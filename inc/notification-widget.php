@@ -57,7 +57,7 @@ function rje_notification_content() {
 		<div class="rss-widget">
 			<h3><?php esc_html_e( __( 'Information', 'ruijinen-block-patterns-beta' ) ); ?></h3>
 	<?php if ( ! empty( $meta_data ) ) : ?>
-			<div class="rje-nortification-text"><?php echo wp_kses_post( $meta_data ); ?></div>
+			<div class="rje-nortification-text"><?php echo wp_kses_post( nl2br( $meta_data ) ); ?></div>
 	<?php endif; ?>
 			<ul id="rje-notification-widget">
 				<?php foreach ( $posts_data as $item ) : ?>
