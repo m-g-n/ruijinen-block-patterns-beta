@@ -6,7 +6,7 @@
  */
 
 $pattern_category = array( 'RJE-company' );
-$pattern_title    = 'アクセス 1';
+$pattern_title    = 'アクセスMAP1';
 $use_block_style  = array(
 	'RJE-access-1',
 	'RJE-access-btn-1',
