@@ -1,0 +1,7 @@
+@charset 'utf-8';
+
+@import '../../../../src/css/block-styles';
+
+.is-style-RJE-accordion-slim-1:not(:root){
+	@include width-slim;
+}
