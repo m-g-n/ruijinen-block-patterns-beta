@@ -14,17 +14,8 @@
 	}
 	.smb-section__body{
 		margin-top: 24px;
-		.smb-buttons{
-			margin-bottom: 0;
-		}
-		.smb-btn-wrapper{
-			padding-bottom: 0;
-		}
 		.wp-block-separator{
 			margin-top: 40px;
-		}
-		.smb-btn__label{
-			font-size: 18px;
 		}
 		>h4{
 			font-size: 16px;
@@ -52,11 +43,6 @@
 	@include mq(md) {
 		.smb-section__title{
 			font-size: 32px;
-		}
-		.smb-section__body{
-			.smb-btn__label{
-				font-size: 24px;
-			}
 		}
 	}
 }

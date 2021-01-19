@@ -12,6 +12,7 @@ $use_block_style  = array(
 	'RJE-contact-1',
 	'RJE-contact-mail-1',
 	'RJE-contact-tel-1',
+	'RJE-btn-outline-1',
 );
 
 
