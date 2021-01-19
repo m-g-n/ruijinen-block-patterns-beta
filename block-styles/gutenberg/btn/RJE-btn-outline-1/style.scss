@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+@import '../../../../src/css/block-styles';
+
+.is-style-RJE-btn-outline-1{
+	min-width: 150px;
+	max-width: 60%;
+	.wp-block-button__link{
+		font-size : 18px;
+		padding: 10px 20px;
+		line-height: 1.8;
+		background-color: transparent;
+		border: solid 1px;
+		backdrop-filter: none;
+		&:hover{
+			backdrop-filter: brightness(90%)blur(10px);
+		}
+	}
+	@include mq(md) {
+		.wp-block-button__link{
+			font-size : 24px;
+			min-width: 256px;
+		}
+	}
+}
