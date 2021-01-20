@@ -1,0 +1,133 @@
+@charset 'utf-8';
+
+@import '../../../../src/css/block-styles';
+
+.is-style-RJE-banner-1{
+	.c-row__col{
+		margin-bottom: 16px;
+	}
+	.smb-panels__item:not(.smb-panels__item--free){
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		padding-top: 37.5%;
+		&::before{
+			content: "";
+			background-color: #000;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 2;
+			opacity: .46;
+		}
+		.smb-panels__item__figure{
+			max-width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+		.smb-panels__item__body{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 3;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			text-align: left;
+			color: #fff;
+			padding: 0 7%;
+		}
+		.smb-panels__item__title{
+			font-size: 18px;
+			line-height: 1.4;
+		}
+		.smb-panels__item__content{
+			margin-top: 8px;
+			font-size: 12px;
+			line-height: 1.8;
+		}
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #000;
+			opacity: 0;
+			transition: all .3s ease;
+			&:hover{
+				background-color: #000;
+				opacity: .2;
+			}
+		}
+	}
+	@include mq(sm) {
+		.c-row{
+			margin-left: -12px;
+			margin-right: -12px;
+			.c-row__col{
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+		}
+	}
+	@include mq(md) {
+		.c-row[data-lg-columns="2"] {
+			margin-left: -15px;
+			margin-right: -15px;
+			.c-row__col{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		.smb-panels__item:not(.smb-panels__item--free){
+			.smb-panels__item__title{
+				font-size: 24px;
+			}
+		}
+	}
+}
+@include mq(lg) {
+	.l-body--left-sidebar,
+	.l-body--right-sidebar,
+	.l-body--one-column-slim,
+	.l-body--blank-slim {
+		.is-style-RJE-banner-1{
+			.smb-panels__item:not(.smb-panels__item--free){
+				height: auto;
+				min-height: 80px;
+				padding-top: 0;
+				.smb-panels__item__figure{
+					width: 100%;
+					height: 100%;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				.smb-panels__item__body{
+					width: 100%;
+					height: 100%;
+					position: relative;
+					z-index: 3;
+					padding: 4% 7%;
+				}
+				.smb-panels__item__title{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
