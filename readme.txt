@@ -4,7 +4,7 @@ Donate link: https://rui-jin-en.com/
 Tags: gutenberg, block, blocks, editor, gutenberg blocks, page builder, landing page, microcopy, steps, call to action
 Requires at least: 5.6
 Tested up to: 5.6
-Stable tag: 0.1.2
+Stable tag: 0.2.0
 Requires PHP: 7.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,8 +22,8 @@ WordPressテーマ Snow Monkeyを拡張するブロックパターン（ベー�
 ## 動作環境
 現在確認されている動作環境は以下のとおりです
 * WordPress 5.6 以上
-* Snow Monkey 12.0 以上
-* Snow Monkey Blocks 10.0.1
+* Snow Monkey 12.2.2 以上
+* Snow Monkey Blocks 10.2.1 以上
 
 == Installation ==
 1. ruijinen-block-patterns-beta フォルダ全体を /wp-content/plugins/ ディレクトリにアップロードします。
@@ -32,6 +32,14 @@ WordPressテーマ Snow Monkeyを拡張するブロックパターン（ベー�
 4. パターンのプルダウンより`[類人猿]**サイト`を選択して利用します。
 
 == 変更履歴 ==
+= 0.2.0 =
+* 「[類人猿] 企業サイト」パターンにパターンを追加
+	* アコーディオン1（スリム）
+	* 沿革1
+	* アクセスMAP1
+	* バナー1
+	* お問合せ誘導1
+
 = 0.1.2 =
 * お知らせのウィジェットの出力を修正
 
