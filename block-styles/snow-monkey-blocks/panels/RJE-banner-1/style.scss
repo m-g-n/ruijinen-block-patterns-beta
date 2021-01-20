@@ -98,3 +98,36 @@
 		}
 	}
 }
+@include mq(lg) {
+	.l-body--left-sidebar,
+	.l-body--right-sidebar,
+	.l-body--one-column-slim,
+	.l-body--blank-slim {
+		.is-style-RJE-banner-1{
+			.smb-panels__item:not(.smb-panels__item--free){
+				height: auto;
+				min-height: 80px;
+				padding-top: 0;
+				.smb-panels__item__figure{
+					width: 100%;
+					height: 100%;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				.smb-panels__item__body{
+					width: 100%;
+					height: 100%;
+					position: relative;
+					z-index: 3;
+					padding: 4% 7%;
+				}
+				.smb-panels__item__title{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
