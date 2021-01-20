@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+@import '../../../../src/css/block-styles';
+
+.is-style-RJE-contact-1:not(:root){
+	margin-top: 20px;
+	.smb-container__body{
+		display: inline-block;
+		p+p{
+			margin-top: 10px;
+		}
+	}
+}
